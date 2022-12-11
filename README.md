@@ -2,6 +2,11 @@
 
 Newsletter signup page using HTML | NodeJs | Express | Posting data to Mailchimp's Servers via their API | Deploying Server with Heroku
 
+Create Procfile by
+
+touch Procfile
+add web: node app.js(your JS file) to Procfile
+
 
 Heroku Installation:
 
