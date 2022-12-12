@@ -31,10 +31,10 @@ app.post("/", function(req, res){
         ]
     };
     const jsonData=JSON.stringify(data);
-    const url="https://us21.api.mailchimp.com/3.0/lists/628ac693ef";
+    const url="https://us21.api.mailchimp.com/3.0/lists/(UniqueID)";
     const options={
         method:"POST",
-        auth:"wingit:d32d974f55d3703e72852cfc0e700313-us21"
+        auth:"wingit:(API Key)"
     }
 
     const request=https.request(url, options, function(response){  //to post user entering fields to mailchimp
@@ -68,6 +68,3 @@ app.post("/failure", function(req, res){
 app.listen(process.env.PORT || 3000, function(){
     console.log("Server is running on port 3000.");
 });
-
-//d32d974f55d3703e72852cfc0e700313-us21 -API key
-// 628ac693ef-unique ID
